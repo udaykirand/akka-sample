@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'me.ukd.akka.sample'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.typesafe.akka', name: 'akka-http_2.12', version: '10.0.11'
+    compile group: 'com.typesafe.akka', name: 'akka-stream_2.12', version: '2.5.11'
+    compile group: 'com.typesafe.akka', name: 'akka-http-jackson_2.12', version: '10.0.11'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'com.typesafe.akka', name: 'akka-http-testkit_2.12', version: '10.0.11'
+}
